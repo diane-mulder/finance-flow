@@ -23,22 +23,12 @@ export default function Transactions () {
     }
 
     return (
-        <div>
-            <div>
-                <h1>CONNEXION</h1>
-                <input></input>
-            </div>
-            
-            <div>
-               <h1>TRANSACTIONS</h1>
+        <div className="transactions">
+            <h1>TRANSACTIONS</h1>
                 <input></input>
                 <buton onClick={saveLocalStorage} type="button">Save</buton>
                 <buton onClick={setItem} type="button">Update</buton>
                 <buton onClick={getItem} type="button">Display</buton> 
-            </div>
-            
         </div>
     );
-
-
 };

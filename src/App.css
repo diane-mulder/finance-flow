@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
 
+/* GÉNÉRAL */ 
+
 body {
   margin: 0 auto;
   padding: 2rem;
@@ -10,5 +12,120 @@ body {
 
 .App {
   background-color: white;
-  color: black;
+  color: #001234;
+}
+
+form {
+  width:100%;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  background-color: #001234;
+  color: white;
+  padding: 10px 15px 10px 15px;
+  border: none;
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 7px;
+  width: 100%;
+}
+
+input::placeholder {
+  color: white;
+  text-transform: uppercase;
+}
+
+input:active {
+  border: none;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 7px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  color: white;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  background-color: #671F5E !important;
+  margin-top: 20px;
+}
+
+button:hover {
+  border: none;
+}
+
+/* CONNEXION */
+
+.login h1 {
+  font-size: 14px !important;
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: underline;
+  line-height: 1.5;
+  font-weight: 700;
+  margin-left: 20px;
+}
+
+.login h2 {
+  font-size: 14px !important;
+  text-align: right;
+  text-transform: uppercase;
+  text-decoration: underline;
+  line-height: 1.5;
+  font-weight: 300;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-top: -28px;
+}
+
+.login img {
+  width: 70%;
+  margin-bottom: 40px;
+} 
+
+/* INSCRIPTION */
+
+/* TRANSACTIONS */
+
+.transactions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.transactions h2 {
+  font-size: 14px !important;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.item-transaction {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  background-color: #D9D9D9;
+}
+
+p .amount {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* COMPTE */
+
+/* PROFIL */
+
+/* HEADER */
+
+/* FOOTER */
+
+.footer i {
+  display: flex;
+  flex-direction: row;
 }
