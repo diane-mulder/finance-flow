@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import localStorage from "./localStorage";
-import './App.css'
+import './App.css';
 import Login from './components/Login';
 
 export default function App() { 
@@ -26,15 +26,15 @@ export default function App() {
     console.log(allUser)
   }
 
-  function connexion(name,password){
+  function connexion(login, password){
     setUser({
-      username: name,
+      username: login,
       password: password 
     })
     getAllUserList()
     console.log(allUser)
 
-    console.log(name, password, user, 'ici connexion')
+    console.log(login, password, user, 'ici connexion')
   }
 
   useEffect(() => {
@@ -65,22 +65,21 @@ function saveLocalStorage(){
       ): (
         <div className='transactions'>
 
-          {/* <input onChange={(e)=>{setLocalStorageNameItem(e.target.value)}} placeholder='RENTREZ LE MONTANT' type="text" /> */}
           <input onChange={(e)=>{setLocalStorageItem(e.target.value)}} placeholder='RENTREZ LE MONTANT' type="text" />
+
+          <h2>Choisissez une catégorie</h2>
     
-          <button onClick={getItem} type="button">get item from storage</button>
+          <button onClick={getItem} type="button">Display</button>
     
-          <button onClick={removeItem} type='button'>clear storage</button>
+          <button onClick={removeItem} type='button'>Delete</button>
     
           <button onClick={saveLocalStorage}>Save</button>
         </div>
       )
-    }
-    {allUser.length > 0 && allUser.map(element => {
-      <p>toto</p>
-    })}
-
-    
+      }
+        {allUser.length > 0 && allUser.map(element => {
+          <p>toto</p>
+        })}
     </div>
   )
 }

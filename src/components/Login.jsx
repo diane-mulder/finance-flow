@@ -1,14 +1,14 @@
 import { useState } from 'react';
-import '../login.css';
+import '../App.css';
 
-function Login (props) {
+export default function Login (props) {
 
     const [name, setName] = useState('')
     const [password, setPassword] = useState('')
 
     return (
 
-        <div>
+        <div className='login'>
             <img src='./public/logo-totally-bank.png'></img>
             <h1>Se connecter</h1>
             <h2>S'inscrire</h2>
@@ -17,7 +17,5 @@ function Login (props) {
 
             <button onClick={() => {props.connexion(name,password)}}><span>Connexion</span></button>
         </div>
-    )  
-}
-
-export default Login;
+    );
+};
