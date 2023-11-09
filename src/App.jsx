@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import localStorage from "./localStorage";
 import './App.css'
-import Login from './pages/Login';
+import Login from './components/Login';
 
 export default function App() { 
 
